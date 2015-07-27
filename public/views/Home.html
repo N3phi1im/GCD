@@ -1,12 +1,13 @@
 <div ng-controller="HomeController as vm">
-	<div class='row center'>
-		<input ng-model='vm.input1' type="text" />
-		<button ng-click='vm.multiply()'>Multiply</button>
-		{{vm.output1}}
-	</div>
+	<br>
 	<br>
 	<div class='row center'>
-		<input ng-model='vm.input2' ng-change='vm.multiply2()' type="text" />
-		{{vm.output2}}
+		<input ng-model='vm.input1' type="number" />
+		<input ng-model='vm.input2'  type="number" />
+		<br>
+		<br>
+		<button ng-click='vm.multiply()'>Run</button>
+		<br>
+		<h1>{{vm.output}}</h1>
 	</div>
 </div>
